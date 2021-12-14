@@ -1,0 +1,13 @@
+C:\github\SchoolLibraryBackend\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.deps.json
+C:\github\SchoolLibraryBackend\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\github\SchoolLibraryBackend\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\github\SchoolLibraryBackend\DataAccess\bin\Debug\netcoreapp3.1\Entities.dll
+C:\github\SchoolLibraryBackend\DataAccess\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\github\SchoolLibraryBackend\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.AssemblyReference.cache
+C:\github\SchoolLibraryBackend\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\SchoolLibraryBackend\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
+C:\github\SchoolLibraryBackend\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
+C:\github\SchoolLibraryBackend\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CoreCompileInputs.cache
+C:\github\SchoolLibraryBackend\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CopyComplete
+C:\github\SchoolLibraryBackend\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
+C:\github\SchoolLibraryBackend\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb
