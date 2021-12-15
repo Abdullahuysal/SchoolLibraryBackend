@@ -3,6 +3,7 @@ using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace DataAccess.Concrete.InMemory
@@ -30,9 +31,19 @@ namespace DataAccess.Concrete.InMemory
             _books.Remove(bookToDelete);
         }
 
+        public Book Get(Expression<Func<Book, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Book> GetAll()
         {
             return _books;
+        }
+
+        public List<Book> GetAll(Expression<Func<Book, bool>> filter = null)
+        {
+            throw new NotImplementedException();
         }
 
         public List<Book> GetAllByCategory(string categoryName)

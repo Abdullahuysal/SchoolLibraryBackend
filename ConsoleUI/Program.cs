@@ -1,4 +1,5 @@
 ﻿using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using System;
 
@@ -8,9 +9,9 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            BookManager bookManager = new BookManager(new InMemoryBookDal());
+            BookManager bookManager = new BookManager(new EfBookDal());
 
-            foreach (var book in bookManager.GetAll())
+            foreach (var book in bookManager.GetAllByName("Sefiller"))
             {
                 Console.WriteLine(book.BookName);
             }

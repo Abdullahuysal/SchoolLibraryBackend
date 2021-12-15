@@ -8,5 +8,8 @@ namespace Business.Abstract
     public interface IBookService
     {
         List<Book> GetAll();
+        List<Book> GetAllByCategory(string BookCategory);
+
+        List<Book> GetAllByName(string BookName);
     }
 }

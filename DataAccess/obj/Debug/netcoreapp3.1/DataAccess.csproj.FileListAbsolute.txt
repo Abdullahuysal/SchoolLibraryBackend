@@ -11,3 +11,5 @@ C:\github\SchoolLibraryBackend\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csp
 C:\github\SchoolLibraryBackend\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CopyComplete
 C:\github\SchoolLibraryBackend\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
 C:\github\SchoolLibraryBackend\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb
+C:\github\SchoolLibraryBackend\DataAccess\bin\Debug\netcoreapp3.1\Core.dll
+C:\github\SchoolLibraryBackend\DataAccess\bin\Debug\netcoreapp3.1\Core.pdb

@@ -20,5 +20,15 @@ namespace Business.Concrete
         {
             return _bookDal.GetAll();
         }
+
+        public List<Book> GetAllByCategory(string BookCategory)
+        {
+            return _bookDal.GetAll(p => p.BookCategory == BookCategory);
+        }
+
+        public List<Book> GetAllByName(string BookName)
+        {
+            return _bookDal.GetAll(p => p.BookName==BookName);
+        }
     }
 }
