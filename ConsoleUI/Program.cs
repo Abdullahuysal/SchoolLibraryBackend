@@ -1,6 +1,5 @@
 ﻿using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
-using DataAccess.Concrete.InMemory;
 using System;
 
 namespace ConsoleUI
@@ -9,13 +8,22 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            BookManager bookManager = new BookManager(new EfBookDal());
+            StudentManager studentManager = new StudentManager(new EfStudentDal());
 
-            foreach (var book in bookManager.GetAllByName("Sefiller"))
+            var result = studentManager.GetAll();
+            if (result.Success == true)
             {
-                Console.WriteLine(book.BookName);
+                foreach (var student in result.Data)
+                {
+                    Console.WriteLine(student.StudentEmail + "---" + student.StudentName);
+                }
             }
-            
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
         }
+
+   
     }
 }

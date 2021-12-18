@@ -8,6 +8,8 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class SchoolLibraryContext:DbContext
     {
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-2DE1HM4\SQLEXPRESS;Database=SchoolLibrary;Integrated Security=true;");

@@ -61,3 +61,6 @@ C:\github\SchoolLibraryBackend\ConsoleUI\bin\Debug\netcoreapp3.1\runtimes\win\li
 C:\github\SchoolLibraryBackend\ConsoleUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\github\SchoolLibraryBackend\ConsoleUI\bin\Debug\netcoreapp3.1\Core.dll
 C:\github\SchoolLibraryBackend\ConsoleUI\bin\Debug\netcoreapp3.1\Core.pdb
+C:\github\SchoolLibraryBackend\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.dll
+C:\github\SchoolLibraryBackend\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+C:\github\SchoolLibraryBackend\ConsoleUI\bin\Debug\netcoreapp3.1\Castle.Core.dll

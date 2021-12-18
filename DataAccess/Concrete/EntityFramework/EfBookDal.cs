@@ -1,6 +1,7 @@
 ﻿using Core.DataAccess.EntityFramework;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,8 +11,8 @@ using System.Text;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfBookDal :EfEntityRepositoryBase<Book,SchoolLibraryContext> ,IBookDal
+    public class EfBookDal : EfEntityRepositoryBase<Book, SchoolLibraryContext>, IBookDal
     {
-       
+        
     }
 }

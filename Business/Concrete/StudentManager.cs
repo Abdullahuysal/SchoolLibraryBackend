@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Constants;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -16,14 +18,34 @@ namespace Business.Concrete
             _studentDal = studentDal;
         }
 
-        public List<Student> GetAll()
+        public IResult Add(Student student)
         {
-            return _studentDal.GetAll();
+            if(student.StudentEmail==null || student.StudentName==null || student.StudentLastName==null || student.StudentNumber==0 || student.StudentPassword == null)
+            {
+                return new ErrorResult(Messages.StudentInformationMissing);
+            }
+            _studentDal.Add(student);
+            return new SuccessResult(Messages.StudentAdded);
         }
 
-        public Student GetById(int studentId)
+        public IDataResult<List<Student>> GetAll()
         {
-            return _studentDal.Get(s => s.StudentId == studentId);
+            if (DateTime.Now.Hour == 13)
+            {
+                return new ErrorDataResult<List<Student>>(Messages.StudentTableError);
+            }
+            
+            return new SuccessDataResult<List<Student>>(_studentDal.GetAll());
+        }
+
+        public IDataResult<Student> GetByemail(string studentemail)
+        {
+            return new SuccessDataResult<Student>(_studentDal.Get(s => s.StudentEmail == studentemail));
+        }
+
+        public IDataResult<Student> GetById(int studentId)
+        {
+            return new SuccessDataResult<Student>(_studentDal.Get(s => s.StudentId == studentId));
         }
     }
 }

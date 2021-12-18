@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Constants;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -16,19 +18,26 @@ namespace Business.Concrete
             _bookDal = bookDal;
         }
 
-        public List<Book> GetAll()
+        public IResult Add(Book book)
         {
-            return _bookDal.GetAll();
+            if(book.BookName==null || book.BookAuthor==null|| book.BookCategory==null)
+            {
+                return  new ErrorResult(Messages.BookAddError);
+            }
+            _bookDal.Add(book);
+            return new SuccessResult(Messages.BookAddSuccess);
         }
 
-        public List<Book> GetAllByCategory(string BookCategory)
+        public IDataResult<List<Book>> GetAll()
         {
-            return _bookDal.GetAll(p => p.BookCategory == BookCategory);
+            return new SuccessDataResult<List<Book>>(_bookDal.GetAll());
         }
 
-        public List<Book> GetAllByName(string BookName)
+      
+
+        public IDataResult<List<Book>> GetAllByName(string BookName)
         {
-            return _bookDal.GetAll(p => p.BookName==BookName);
+            return new SuccessDataResult<List<Book>>(_bookDal.GetAll(b => b.BookName == BookName));
         }
     }
 }
