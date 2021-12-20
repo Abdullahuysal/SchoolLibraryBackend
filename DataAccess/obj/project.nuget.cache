@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HqEtfHJbWXH05KKAyENQRS6ERNeAMhMAp+ujbFOFthGBrWFnprZ5azGWBZfGXcrgZyIyGnmCMANst+XFJnQEYQ==",
+  "dgSpecHash": "lBGyK3wgiVsAx9JrQ+HafT7YiUxHufd6YrGjr07mh//UXESPWkcA3vsX4HgAd0gkV/MHdEd2UA5GrLXoDXHmyA==",
   "success": true,
   "projectFilePath": "C:\\github\\SchoolLibraryBackend\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\uysal\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\uysal\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\uysal\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\uysal\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

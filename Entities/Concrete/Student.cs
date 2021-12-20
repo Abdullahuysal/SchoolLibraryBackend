@@ -13,6 +13,5 @@ namespace Entities.Concrete
         public string StudentLastName { get; set; }
         public string StudentEmail { get; set; }
         public string StudentPassword { get; set; }
-        public virtual ICollection<BorrowedBook>BorrowedBooks  { get; set; }
     }
 }

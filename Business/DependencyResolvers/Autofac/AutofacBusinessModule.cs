@@ -19,6 +19,8 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<EfStudentDal>().As<IStudentDal>().SingleInstance();
             builder.RegisterType<BorrowedBookManager>().As<IBorrowedBookService>().SingleInstance();
             builder.RegisterType<EfBorrowedBookDal>().As<IBorrowedBookDal>().SingleInstance();
+            builder.RegisterType<AuthManager>().As<IAuthService>().SingleInstance();
+            
 
 
         }

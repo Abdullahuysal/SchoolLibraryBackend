@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "jzqjMbQBAyWyXkw5QLT3/PKXL22xZiU5gIabu7lvkatMqZjn2JEieP33m4I7I0rjZIB1KwOybzEIIIvj2p0x1Q==",
+  "dgSpecHash": "4PCDeXmlvXXTbI8MU1HGTaGZZAhO/sl/k1RQp9z35E0aNHx725mRmjQNhnNuM/FESMmbLKtW2Q8OniS3W+s2AQ==",
   "success": true,
   "projectFilePath": "C:\\github\\SchoolLibraryBackend\\ConsoleUI\\ConsoleUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\uysal\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\uysal\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",
     "C:\\Users\\uysal\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\uysal\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\uysal\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\uysal\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\uysal\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

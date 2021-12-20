@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "O0EtOJGLdtZTq5zRIcsraCwOI42nGmcrp8aSCjcYMzsX3/XX8hRLeofJJCysWYJglslle2kQ4XZxfSu64iVacw==",
+  "dgSpecHash": "bTn4of5mmrciLTp2Sk3SLQFwh7SMmz40ZVyqeqvGYcH6QVjGWyeoYNE9snlxIy6ehP/AL+rGDXbBTPvq1/E8DQ==",
   "success": true,
   "projectFilePath": "C:\\github\\SchoolLibraryBackend\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\uysal\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\uysal\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\uysal\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\uysal\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

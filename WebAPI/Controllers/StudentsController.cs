@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -18,15 +19,26 @@ namespace WebAPI.Controllers
         {
             _studentService = studentService;
         }
-        [HttpGet("getstudent")]
-        public IActionResult GetStudent(string studentemail)
+        [HttpGet("getstudentinfo")]
+        public IActionResult GetStudentinfo(int studentId)
         {
-            var result = _studentService.GetByemail(studentemail);
+            var result = _studentService.GetById(studentId);
             if (result.Success)
             {
                 return Ok(result.Data);
             }
             return BadRequest(result);
         }
+
+        [HttpPost("add")]
+        public IActionResult Add(Student student)
+        {
+            var result = _studentService.Add(student);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        } 
     }
 }

@@ -1,8 +1,11 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,10 +23,8 @@ namespace Business.Concrete
 
         public IResult Add(Book book)
         {
-            if(book.BookName==null || book.BookAuthor==null|| book.BookCategory==null)
-            {
-                return  new ErrorResult(Messages.BookAddError);
-            }
+            ValidationTool.Validate(new BookValidator(),book);
+            
             _bookDal.Add(book);
             return new SuccessResult(Messages.BookAddSuccess);
         }
@@ -33,7 +34,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Book>>(_bookDal.GetAll());
         }
 
-      
+
 
         public IDataResult<List<Book>> GetAllByName(string BookName)
         {
