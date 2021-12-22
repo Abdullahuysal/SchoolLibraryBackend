@@ -8,6 +8,7 @@ namespace Business.Constants
     {
         public static string StudentAdded = "Öğrenci Eklendi";
         public static string StudentInformationMissing = "Öğrenci Bilgileri Eksik";
+        public static string StudentUpdated = "Öğrenci Bilgileri Güncellendi";
         public static string StudentTableError = "Öğrenci Bilgileri Getirilemedi";
         public static string BookAddError = "Kitap Eklenemedi";
         public static string BookAddSuccess = "Kitap Eklendi";

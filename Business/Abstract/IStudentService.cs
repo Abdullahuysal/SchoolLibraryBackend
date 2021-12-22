@@ -13,7 +13,7 @@ namespace Business.Abstract
         IDataResult <Student> GetById(int studentId);
         IDataResult<Student> GetByemail(string studentemail);
         IResult Add(Student student);
-
+        IResult Update(Student student);
         IDataResult<Student> login(StudentForLoginDto studentForLoginDto);
 
     }

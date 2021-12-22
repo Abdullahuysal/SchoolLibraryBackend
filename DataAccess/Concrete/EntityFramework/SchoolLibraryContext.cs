@@ -12,12 +12,13 @@ namespace DataAccess.Concrete.EntityFramework
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-2DE1HM4\SQLEXPRESS;Database=SchoolLibrary;Integrated Security=true;");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-2DE1HM4\SQLEXPRESS;Database=SchoolLibrary2;Integrated Security=true;");
             
         }
 
         public DbSet<Student> Student { get; set; }
         public DbSet<Book> Book { get; set; }
         public DbSet<BorrowedBook> BorrowedBook { get; set; }
+        public DbSet<Admin>Admin { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Entities.Concrete
         public string BookName { get; set; }
         public string BookAuthor { get; set; }
         public int BookPageCount { get; set; }
-        public int BookStockInLibrary { get; set; }
+        public bool Bookavailability { get; set; }
 
 
     }

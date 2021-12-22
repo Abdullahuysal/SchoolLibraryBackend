@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core.Utilities.Results;
+using Entities.Concrete;
 using Entities.DTOs;
 using System;
 using System.Collections.Generic;
@@ -8,10 +9,7 @@ namespace Business.Abstract
 {
     public interface IBorrowedBookService
     {
-        List<BorrowedBook> GetAll();
-        BorrowedBook GetById(int borrowedBookId);
-
-        List<BorrowedBookDetailDto> GetBorrowedBookDetail();
+        IDataResult<List<BorrowedBook>> GetById(int studentId);
 
     }
 }

@@ -27,13 +27,15 @@ namespace Business.Concrete
             _studentDal.Add(student);
             return new SuccessResult(Messages.StudentAdded);
         }
+        public IResult Update(Student student)
+        {
+            ValidationTool.Validate(new StudentValidator(), student);
+            _studentDal.Update(student);
+            return new SuccessResult(Messages.StudentUpdated);
+        }
 
         public IDataResult<List<Student>> GetAll()
         {
-            if (DateTime.Now.Hour == 13)
-            {
-                return new ErrorDataResult<List<Student>>(Messages.StudentTableError);
-            }
             
             return new SuccessDataResult<List<Student>>(_studentDal.GetAll());
         }
@@ -54,5 +56,6 @@ namespace Business.Concrete
             return new SuccessDataResult<Student>(_studentDal.Get(s => s.StudentEmail == studentForLoginDto.StudentEmail &&
             s.StudentPassword == studentForLoginDto.StudentPassword));
         }
+
     }
 }

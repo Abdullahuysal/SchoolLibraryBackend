@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
@@ -17,19 +18,9 @@ namespace Business.Concrete
             _borrowedBookDal = borrowedBookDal;
         }
 
-        public List<BorrowedBook> GetAll()
+        public IDataResult<List<BorrowedBook>> GetById(int studentId)
         {
-            throw new NotImplementedException();
-        }
-
-        public List<BorrowedBookDetailDto> GetBorrowedBookDetail()
-        {
-            return _borrowedBookDal.GetBorrowedBookDetail();
-        }
-
-        public BorrowedBook GetById(int borrowedBookId)
-        {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<BorrowedBook>>(_borrowedBookDal.GetAll(b => b.StudentId == studentId));
         }
     }
 }
